@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="DropDownMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aV-wp-K00">
+                                <rect key="frame" x="20" y="40" width="335" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eL-Wq-VIn">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="dropdownBtnTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGh-hE-BxE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuz-GW-xFn">
+                                        <rect key="frame" x="15" y="2" width="278" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteArrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-sC-B54">
+                                        <rect key="frame" x="308" y="21.5" width="12" height="7"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="7" id="3c9-uy-7XU"/>
+                                            <constraint firstAttribute="width" constant="12" id="ABs-66-D79"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1eL-Wq-VIn" firstAttribute="top" secondItem="5aV-wp-K00" secondAttribute="top" id="2Kt-XG-DPf"/>
+                                    <constraint firstItem="1eL-Wq-VIn" firstAttribute="leading" secondItem="5aV-wp-K00" secondAttribute="leading" id="3e3-9E-2rR"/>
+                                    <constraint firstItem="Fuz-GW-xFn" firstAttribute="top" secondItem="5aV-wp-K00" secondAttribute="top" constant="2" id="6HH-ju-Zxk"/>
+                                    <constraint firstAttribute="height" constant="50" id="CNj-qV-F2X"/>
+                                    <constraint firstItem="tOq-sC-B54" firstAttribute="centerY" secondItem="5aV-wp-K00" secondAttribute="centerY" id="DBk-9j-1CZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="1eL-Wq-VIn" secondAttribute="bottom" id="DjI-aH-bjc"/>
+                                    <constraint firstAttribute="trailing" secondItem="tOq-sC-B54" secondAttribute="trailing" constant="15" id="WCO-gl-dAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="1eL-Wq-VIn" secondAttribute="trailing" id="fr9-v3-2ow"/>
+                                    <constraint firstItem="Fuz-GW-xFn" firstAttribute="leading" secondItem="5aV-wp-K00" secondAttribute="leading" constant="15" id="hYI-cd-9M3"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fuz-GW-xFn" secondAttribute="bottom" constant="2" id="hcP-tS-zp1"/>
+                                    <constraint firstItem="tOq-sC-B54" firstAttribute="leading" secondItem="Fuz-GW-xFn" secondAttribute="trailing" constant="15" id="vZC-u5-mkv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5aV-wp-K00" secondAttribute="trailing" constant="20" id="CZu-ak-D0K"/>
+                            <constraint firstItem="5aV-wp-K00" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cDf-5T-lOB"/>
+                            <constraint firstItem="5aV-wp-K00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="v3E-Ue-ovO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dropDownBtn" destination="1eL-Wq-VIn" id="NPb-PX-nwY"/>
+                        <outlet property="dropDownContainer" destination="5aV-wp-K00" id="e1N-od-SfY"/>
+                        <outlet property="dropDownTitleLabel" destination="Fuz-GW-xFn" id="5T2-Mx-9XQ"/>
+                        <outlet property="dropdownArrow" destination="tOq-sC-B54" id="Hio-jd-1zY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhiteArrowDown" width="12.333333015441895" height="7"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
